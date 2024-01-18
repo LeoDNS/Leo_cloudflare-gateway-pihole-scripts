@@ -59,7 +59,7 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           FAST_MODE: ${{ vars.FAST_MODE }}
 
-- name: Generate
+      - name: Generate
         run: |
           echo "Temp" >> ./temp.txt
       - name: Keep
